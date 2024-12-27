@@ -1,0 +1,308 @@
+@font-face {
+    font-family:poppins ;
+    src: url(../font/Poppins-Regular.ttf);
+}
+.home{
+    background-image: url(../img/bg.jpg);
+    background-position: center center;
+    background-size: cover;
+    font-family:'poppins' ;
+}
+.logo{
+    font-weight: 800;
+    letter-spacing: 1px;
+}
+.lay-out{
+    position: absolute;
+    top: 0;
+    height: 100%;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, .5);
+}
+.caption h2 {
+    font-size: 50px;
+    font-weight: 800;
+}
+.caption p ,.caption span{
+    font-size: 60px;
+    animation-duration: .6s;
+
+}
+.caption p::after{
+    content: 'Developer.';
+    animation: typing 5s infinite .7s ;
+}
+.social i {
+    width: 30px ;
+    height: 30px ;
+    background-color: rgba(0, 0, 0, .5);
+    color: #fff;
+    line-height: 2;
+    transition: all ease-in-out .3s;
+}
+.social i:hover{
+    background-color: #fff;
+    color: #000;
+    width: 35px !important;
+    height: 35px !important;
+    line-height: 2.3;
+}
+
+@keyframes typing {
+    2%{content: 'Developer.';}
+    4%{content: 'Developer';}
+    6%{content: 'Develope';}
+    8%{content: 'Develop';}
+    10%{content: 'Develo';}
+    12%{content: 'Devel';}
+    14%{content: 'Deve';}
+    16%{content: 'Dev';}
+    18%{content: 'De';}
+    20%{content: 'D';}
+    22%{content: '';}
+    24%{content: '';}
+    26%{content: 'U';}
+    28%{content: 'UI';}
+    30%{content: 'UI&';}
+    32%{content: 'UI&U';}
+    34%{content: 'UI&UX';}
+    36%{content: 'UI&UX ';}
+    38%{content: 'UI&UX D';}
+    40%{content: 'UI&UX De';}
+    42%{content: 'UI&UX Des';}
+    44%{content: 'UI&UX Desi';}
+    46%{content: 'UI&UX Desig';}
+    48%{content: 'UI&UX Design';}
+    49%{content: 'UI&UX Designe';}
+    50%{content: 'UI&UX Designer';}
+    52%{content: 'UI&UX Designer.';}
+    54%{content: 'UI&UX Designer';}
+    55%{content: 'UI&UX Designe';}
+    56%{content: 'UI&UX Design';}
+    58%{content: 'UI&UX Desig';}
+    60%{content: 'UI&UX Desi';}
+    62%{content: 'UI&UX Des';}
+    64%{content: 'UI&UX De';}
+    66%{content: 'UI&UX D';}
+    68%{content: 'UI&UX ';}
+    69%{content: 'UI&UX';}
+    70%{content: 'UI&U';}
+    72%{content: 'UI&';}
+    74%{content: 'UI';}
+    76%{content: 'U';}
+    78%{content: '';}
+    80%{content: '';}
+    82%{content: 'D';}
+    84%{content: 'De';}
+    86%{content: 'Dev';}
+    88%{content: 'Deve';}
+    90%{content: 'Devel';}
+    92%{content: 'Develo';}
+    94%{content: 'Develop';}
+    96%{content: 'Develope';}
+    98%{content: 'Developer';}
+    100%{content: 'Developer.';}
+}
+/* --------------------------about--------------------------- */
+
+.about .photo::after {
+    content: '';
+    background-image: url(../img/dots.png);
+    background-repeat: repeat;
+    width: 100%;
+    height: 100%;
+    position: absolute; 
+    top:15px;
+    right:15px;
+    z-index: -1; 
+}
+.me .tittle {
+    font-family: 'poppins';
+    color: #999;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+}
+.me .info {
+    font-family: 'poppins';
+    line-height: 1.6;
+    margin: 0;
+    font-size: 15px;
+    color: var(--tittelColor);
+}
+.me .info .name {
+    font-weight: 700;
+}
+.progress {
+    margin-bottom: 30px;
+    height: 25px;
+}
+/* ------------services------------- */
+
+.service ,.blog ,.client{
+    background-color: #f7f7f7;
+}
+.head-sec{
+    z-index: 1;
+}
+.head-sec h2{
+font-weight: 900;
+font-size: 40px;
+}
+.head-sec h2::after{
+    content: '';
+    background-image: url(../img/dots.png);
+    background-repeat: repeat;
+    position: absolute;
+    height: 100%;
+    width: 100% ;
+    top: 15px;
+    right: 0%;
+    z-index: -1;
+}
+.service .icon i ,.contact .icon i{
+    font-size: 30px;
+    margin-bottom: 20px;
+    width: 70px;
+    height: 70px;
+    line-height: 70px;
+    background: #f4f4f4;
+    border-radius: 50%;
+    transition: all .5s;
+}
+.service .card:hover i ,.contact .icon:hover i{
+    background: #000;
+    color: #f4f4f4;
+}
+/* ------------------------portfolio---------------- */
+.link h3{
+    margin: 0 15px;
+    color: #222;
+    font-weight: 700;
+    font-size: 16px;
+}
+.pic .overlay{
+    position: absolute;
+    top: 5px;
+    bottom: 5px;
+    left: 5px;
+    right: 5px;
+    background: rgba(255, 255, 255, 0.95);
+    transition: all .5s;
+    opacity: 0;
+}
+.pic:hover .overlay {
+    opacity: 1;
+}
+.pic:hover .middle p {
+    transform: translateY(0px);
+}
+.pic:hover .middle .icon {
+    transform: translateY(0px);
+}
+.middle p {
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    margin-bottom: 15px;
+    transform: translateY(-15px);
+    transition: all .8s;
+}
+.pic .icon{
+    transform: translateY(15px);
+    transition: all .8s;
+}
+.pic .icon i {
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    border-radius: 50%;
+    background: #111;
+    color: #eee;
+}
+/* --------------client--------------- */
+.carousel-caption{
+    position: unset;
+    color: unset;
+}
+.carousel-item .massage {
+    word-spacing: 2px;
+    line-height: 1.6;
+    font-size: 15px;
+    color: #748182;
+}
+.carousel-caption h5 {
+    font-size: 16px;
+    font-weight: 600;
+}
+.carousel-caption p {
+    font-size: 12px;
+    font-weight: 600;
+    color: #888;
+    margin-bottom: 30px;
+}
+.btn-circle {
+    width: 10px !important;
+    height: 10px !important;
+    border-radius: 50%;
+}
+/* ---------------------------blog---------------- */
+
+.blog .card-title {
+    font-size: 12px;
+    font-weight: 600;
+    color: #888;
+}
+.blog .card-text {
+    font-weight: 800;
+    font-size: 20px;
+    line-height: 1.6;
+}
+.card-body a {
+    font-family: 'poppins', sans-serif;
+    color: #343434;
+}
+.card-body a:hover {
+    color: blue;
+}
+.card:hover img{
+    transform: scale(1.2);
+}
+.card img {
+    transition: all .7s ease-in-out;
+}
+/* ------------------------contact------------------------ */
+
+.out-lable input {
+    width: 100%;
+    border: 0;
+    border-radius: 5px;
+    padding: 10px;
+    background: #f4f4f4;
+}
+.out-lable textarea {
+    height: 160px;
+    max-height: 160px;
+    max-width: 100%;
+    width: 100%;
+    border: 0;
+    border-radius: 5px;
+    padding: 10px;
+    background: #f4f4f4;
+    resize: both;
+}
+.botton:hover {
+    background-color: #fff ;
+    color: #000 ;
+}
+/* ------------------foooter---------------- */
+footer{
+    background-color: #1c1c1c;
+}
+footer p {
+    font-size: 13px;
+    word-spacing: 2px;
+    color: #748182;
+    line-height: 3;
+}
